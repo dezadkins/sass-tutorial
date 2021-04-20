@@ -1,0 +1,18 @@
+body {
+  background: #7ac775;
+  color: #fff;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .main__para {
+  font-weight: 700;
+}
+
+.main .main__para:hover {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

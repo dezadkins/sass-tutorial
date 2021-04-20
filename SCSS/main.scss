@@ -1,0 +1,26 @@
+$main-color: #7ac775;
+$accent-color: #fff332;
+$text-color: #fff;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+body {
+  background: $main-color;
+  color: $text-color;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  #{&}__para {
+    font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: black;
+    }
+  }
+}
