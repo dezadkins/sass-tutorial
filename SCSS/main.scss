@@ -1,11 +1,15 @@
-$main-color: #7ac775;
-$accent-color: #fff332;
-$text-color: #fff;
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
+@import "./resets";
+@import "./variables";
+
+@function weight($weightName) {
+  @return map-get($font-weights, $weightName);
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   background: $main-color;
@@ -17,7 +21,7 @@ body {
   margin: 0 auto;
 
   #{&}__para {
-    font-weight: map-get($font-weights, bold);
+    font-weight: weight(bold);
 
     &:hover {
       color: black;
